@@ -1,27 +1,27 @@
 body{
-    background-color: rgb(20, 20, 20);
-    margin: 0px;
+  background-color: rgb(24, 37, 9);
+  margin: 0px;
 }
 #menu{
-    height: 100vh;
-    display: flex;
-    align-items: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 #menu-items{
-    margin-left: clamp(4rem, 20vw, 48rem);
-    position: relative;
-    z-index: 2;
+  margin-left: clamp(4rem, 20vw, 48rem);
+  position: relative;
+  z-index: 2;
 }
 #menu-items:hover > .menu-item{
-    opacity: 0.3;
+  opacity: 0.3;
 }
 #menu-items:hover > .menu-item:hover{
-    opacity: 1;
+  opacity: 1;
 }
 .menu-item{
-    color: green;
-    font-size: clamp(3rem, 8vw, 8rem);
-    font-family: "Ibarra Real Nova", serif;
+  color: rgb(98, 184, 98);
+  font-size: clamp(3rem, 8vw, 8rem);
+  font-family: "Ibarra Real Nova", serif;
 display: block;
 text-decoration: none;
 padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
@@ -46,27 +46,26 @@ background-size: 800ms ease;
 }
 
 #menu-items:hover ~ #menu-background-pattern{
-    background-size: 11vmin;
-    opacity: 0.5;
+  background-size: 11vmin;
+  opacity: 0.5;
 }
 #menu[data-active-index="0"] > #menu-background-pattern {
-    background-position: 0% -25%;
+  background-position: 0% -25%;
 }
 #menu[data-active-index="1"] > #menu-background-pattern {
-    background-position: 0% -50%;
+  background-position: 0% -50%;
 }
 #menu[data-active-index="2"] > #menu-background-pattern {
-    background-position: 0% -75%;
+  background-position: 0% -75%;
 }
 #menu[data-active-index="3"] > #menu-background-pattern {
-    background-position: 0% -100%;
+  background-position: 0% -100%;
 }
 #menu-background-image {
 height: 100%;
 width: 100%;
 
-background-image: "5345829-3238348245-matri.jpg";
-
+background-image: url("https://comicvine.gamespot.com/a/uploads/scale_super/11129/111294954/5345829-3238348245-matri.jpg");
 position: absolute;
 left: 0px;
 top: 0px;
@@ -88,17 +87,56 @@ opacity: 0.10;
 }
 #menu[data-active-index="0"] > #menu-background-image{
 
-   background-position: center 45%; 
+ background-position: center 45%; 
 }
 #menu[data-active-index="1"] > #menu-background-image{
 
-    background-position: center 50%; 
- }
- #menu[data-active-index="2"] > #menu-background-image{
+  background-position: center 50%; 
+}
+#menu[data-active-index="2"] > #menu-background-image{
 
-    background-position: center 55%; 
- }
- #menu[data-active-index="3"] > #menu-background-image{
+  background-position: center 55%; 
+}
+#menu[data-active-index="3"] > #menu-background-image{
 
-    background-position: center 65%; 
- }
+  background-position: center 65%; 
+}
+
+/**.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}**/
