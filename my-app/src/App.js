@@ -1,30 +1,27 @@
 
-import HamburgerMenu from "./components/HamburgerMenu";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from "./components/Pages/Home";
-import About from "./components/Pages/About";
-import Portfolio from "./components/Pages/Portfolio";
-import Blog from "./components/Pages/Blog";
-import Contact from "./components/Pages/Contact";
+import './index.css'
+import React from 'react'
 
-function App() {
+  function App() {
   return (
-    <>
-      <Router>
-        <HamburgerMenu />
+   
 
-        <div className="pages">
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/portfolio" component={Portfolio} />
-            <Route path="/blog" component={Blog} />
-            <Route path="/contact" component={Contact} />
-          </Switch>
-        </div>
-      </Router>
-    </>
-  );
+<div id="menu">
+    <div id="menu-item">
+<a href="/" class="menu-item" >Home</a>
+<a href="https://onedrahcirc.github.io/Project1-tree-main-group3/richard/Bio2.html" class="menu-item">Bio1</a>
+<a href="/" class="menu-item" >Bio2</a>
+<a href="/" class="menu-item" >React</a>
+    </div>
+    <div id="menu-backgroud-pattern"></div>
+<div id="menu-backgroud-image"></div>
+
+</div>
+
+
+
+
+);
 }
 
 export default App;

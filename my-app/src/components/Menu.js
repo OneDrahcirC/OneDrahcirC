@@ -1,12 +1,13 @@
 
+const menu = document.getElementById("menu");
 
-const menu = document.getElementsById("menu");
-
-Array.from(document.getElementsByClassName("menu-item"))
-.forEach((item, index) =>{
+Array.from(document.getElementsByClassName("menu-item")).forEach(
+  (item, index) => {
     item.onmouseover = () => {
-menu.dataset.activeIndex = index;
- }
-});
+      menu.dataset.activeIndex = index;
+    };
+  }
+);
+
 
 export default menu
